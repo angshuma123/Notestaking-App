@@ -1,0 +1,406 @@
+.container{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leftContainer{
+  width: 25%;
+  height: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.leftInnerContainer{
+  padding: 0 1rem;
+  overflow-y: hidden;
+}
+
+.notesGroup{
+  margin-top: 1.75rem;
+  margin-right: -1.5rem;
+  overflow-y: auto;
+}
+
+.noteTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 15px 0;
+  padding-left: 1rem;
+  border-radius: 32px 0 0 32px;
+}
+
+.noteIcon{
+  min-width: 50px;
+  min-height: 50px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  height: 100%;
+}
+
+.createNotesButton{
+  width: 100%;
+  border-radius: 50px;
+  height: 50px;
+  background: #000;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.54px;
+  overflow-y: hidden;
+}
+
+.rightContainer{
+  width: 75%;
+  height: 100%;
+  background-color: #F7ECDC;
+  overflow-y: hidden;
+}
+
+.pocketNotesHeader{
+  color: #000;
+  font-size: 31.52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.63px;
+  margin-bottom: 2rem;
+}
+
+.createNotesBg{
+  width: 100vw;
+  height: 100vh;
+  background-color: #2F2F2FBF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.createNotesModal{
+  background-color: white;
+  width: 45%;
+  height: 40%;
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1.015px;
+  padding: 1.5rem 2.5rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  position: relative;
+  border-radius: 8px;
+}
+
+.modalInnerContainer{
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.chooseColor{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.inputGroupName{
+  font-size: 18px;  
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.805px;
+  height: 51px;
+  width: 60%;
+  border-radius: 22px;
+  border: 2px solid #CCC;
+  padding: 2px;
+  padding-left: 10px;
+}
+
+.inputGroupName::placeholder{
+  color: #979797;
+  padding-left: 10px;
+}
+
+.notesColorSelector{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.createButtonContainer{
+  width: 20%;
+  height: 10%;
+  border-radius: 11px;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.createButton{
+  color: #FFF;
+  background-color: #000;
+  width: 100%;
+  border-radius: 11px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.createButton:hover{
+  cursor: pointer;
+}
+
+.note{
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.63px;
+  overflow-y: hidden;
+  margin: 10px 0;
+}
+
+.textArea{
+  border: 1px solid #CCC;
+  border-radius: 9px;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.textArea::placeholder{
+  color: #9A9A9A;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.596px;
+}
+
+.bgPic{
+  background-image: url(../assets/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 50%;
+  height: 250px;
+}
+
+.contentArea{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.innerContentArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: auto;
+  width: 100%;
+}
+
+.pocketNotesText {
+  color: #000;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.contentAreaSubheading{
+  color: #292929;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px; 
+  letter-spacing: 0.44px;
+  width: 50%;
+}
+
+.encryptionText {
+  color: #292929;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.44px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.notesContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.notesContent{
+    padding: 2%;
+    gap: 10px;
+    height: 63%;
+    overflow-y: auto;
+}
+
+.notesTime{
+  width: 15%;
+  overflow-y: hidden;
+}
+
+.notesText{
+  overflow-y: hidden;
+  height: auto;
+  width: 85%;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.textInputContainer{
+  width: 100%;
+  height: 25%;
+  background-color: #E8E8E8;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enterIcon{
+  position: absolute;
+  right: 2%;
+  bottom: 6%;
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  overflow-y: hidden;
+  color: #ABABAB;
+}
+
+.backArrow{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftContainer {
+    width: 100%;
+  }
+
+  .rightContainer {
+    display: none;
+    width: 100%;
+  }
+
+  .createNotesModal{
+    width: 80%;
+    height: 35%;
+    font-size: 14px;
+    padding: 1rem;
+    justify-content: space-around;
+  }
+  
+  .modalInnerContainer{
+    font-size: 14px;
+    gap: 1rem;
+  }
+  
+  .chooseColor{
+    gap: 5px;
+  }
+
+  .notesColorSelector{
+    width: 25px;
+    height: 25px;
+  }
+  
+  .inputGroupName{
+    font-size: 14px;  
+    letter-spacing: normal;
+    height: 30px;
+    width: 70%;
+    padding: 2px;
+    padding-left: 2px;
+  }
+
+  .createButtonContainer{
+    width: 100%;
+    height: 15%;
+    position:static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .createButton{
+    width: 80%;
+    height: 100%;
+  }
+
+  .contentArea{
+    display: none;
+  }
+
+  .backArrow{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  .notesTime{
+    width: 25%;
+  }
+
+  .notesText{
+    width: 75%;
+  }
+
+}
